@@ -1,5 +1,5 @@
 /* =========================
-   Google Font
+   Google Fonts
    ========================= */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap');
@@ -70,13 +70,15 @@ body {
 
 nav {
   display: flex;
-  gap: 28px;
+  gap: 22px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 nav a {
   color: var(--text);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
 
   transition: color 0.2s ease;
@@ -259,7 +261,7 @@ footer {
    Responsive Design
    ========================= */
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
 
   .navbar {
     flex-direction: column;
@@ -267,9 +269,8 @@ footer {
   }
 
   nav {
-    gap: 15px;
-    flex-wrap: wrap;
     justify-content: center;
+    gap: 15px;
   }
 
   .hero {
@@ -313,11 +314,11 @@ footer {
   }
 
   nav {
-    gap: 12px;
+    gap: 10px;
   }
 
   nav a {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
   .hero {
