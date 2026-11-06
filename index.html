@@ -128,7 +128,14 @@ Overall, I learned that AI doesn't have to malfunction to cause harm. Sometimes 
     reasoning are used to model intelligent behavior.
   </h2>
 
-  <p class="evidence">Evidence coming soon</p>
+  <p class="evidence">In class, we learned that AI systems can solve problems by searching through possible actions and outcomes. We represent a problem as a search problem by identifying its state, initial state, available actions, transition model, goal test, and cost function. Together, these tell the system where it is, what it can do, and what it needs to do. 
+Breadth-First Search (BFS) explores level by level, checking all the closest options before moving farther away. This makes it good at finding the shortest path in terms of steps. However, it ignores the cost of individual actions, so it doesn't necessarily find the cheapest path.
+Depth-First Search (DFS) commits to one direction and follows it until it reaches a dead end or the goal, then backtracks and tries another direction. It can explore fewer states than BFS, but it guarantees neither the shortest nor the cheapest solution. The result depends heavily on which direction it tries first.
+A* Search uses a heuristic, an estimate of the remaining cost to the goal. It combines the cost already spent with the estimated remaining cost, so it prioritizes paths most likely to be efficient. The heuristic's accuracy matters. If it never overestimates the remaining cost, A* guarantees the cheapest path. If it overestimates, A* may miss a cheaper route.
+As the number of possible states and actions grows, algorithms must explore more possibilities. BFS becomes inefficient in large spaces because it checks every level, and DFS can waste time on an unhelpful path. A* reduces this by using a heuristic, but its performance still depends on the heuristic's quality and the problem size.
+Warehouse robotics: A 2024 study by Tong Li and Ziming Wang used A* to plan routes for multiple warehouse robots, minimizing distance and time while handling collisions and deadlocks. It shows that the best route for one robot may not be best for the whole system.
+Emergency evacuation: A 2025 study in Simulation Modeling Practice and Theory improved A* for flood evacuation by building water depth into the heuristic. It shows that the "optimal" path depends on the goal, such as safety rather than just speed.
+</p>
 </section>
 
 
